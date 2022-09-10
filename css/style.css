@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Cookie&family=Poppins:ital,wght@0,500;0,600;0,700;1,300;1,400&family=Rampart+One&display=swap");
+@import url("http://fonts.cdnfonts.com/css/vcr-osd-mono");
+@import url("https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&display=swap");
+
+* {
+  margin: 0;
+}
+
+body {
+  text-align: center;
+  background-color: #e8c5c5;
+  color: #000;
+  display: block;
+  justify-content: center;
+  font-size: 30px;
+}
+
+.home {
+  background-image: url("../pictures/bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0px -120px;
+}
+
+.first-container {
+  position: absolute;
+  right: 100px;
+  left: 50%;
+  padding: 10px;
+  top: 100px;
+}
+
+.second-container {
+  text-align: end;
+  padding-right: 100px;
+  position: absolute;
+  right: 250px;
+  top: 400px;
+}
+
+.first-container div {
+  font-size: 30px;
+  color: #fff;
+  font-family: "Lobster Two", cursive;
+}
+
+.btn {
+  background: #f7ae72;
+  border-radius: 100px;
+  font-family: "Poppins";
+  color: #211d1b;
+  border: none;
+  font-size: 20px;
+  padding: 12px 18px;
+}
+
+.btn:hover {
+  background: #61554d;
+  color: beige;
+  border: 1px solid beige;
+  text-decoration: none;
+}
+
+.navbar {
+  background-color: transparent;
+  text-align: center;
+  height: 60px;
+  font-weight: bold;
+  text-decoration: #cf723c;
+}
+
+.navbar-dark {
+  background-color: #211d1bcd;
+  padding-bottom: 10px;
+}
+
+.navbar a {
+  color: beige;
+  font-family: "Rampart One", cursive;
+  font-size: 60px;
+}
+
+.navbar-dark a {
+  color: beige;
+  font-family: "Rampart One", cursive;
+  font-size: 60px;
+}
+
+
+
+.order-page {
+  background-image: url("../pictures/bbg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.form-container {
+  margin: auto;
+  padding: 5% 5%;
+
+  font-size: 20px;
+  text-align: left;
+  padding-right: 50px;
+  width: 50%;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.coffee-container {
+  background-color: rgba(245, 245, 220, 0.5);
+  padding: 5%;
+  width: 20%;
+  text-align: center;
+  margin: auto;
+  margin-top: 50px;
+  border-radius: 20px;
+}
+
+label {
+  font-size: 20px;
+  font-family: "Poppins";
+}
+select,
+input {
+  font-family: "Poppins";
+  font-size: 20px;
+  width: 200px;
+  height: 40px;
+  text-align: center;
+  border-radius: 10px;
+  background-color: #472d2d;
+  color: beige;
+}
+
+.product-btns {
+  display: flex;
+  align-content: space-between;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.product-imgs {
+  display: flex;
+  align-content: space-between;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.billpage {
+  background-color: #211d1b;
+  color: #fff;
+}
+.bill {
+  font-family: "Poppins";
+  width: 40%;
+  padding: 10% 30%;
+  margin: auto;
+}
+.table {
+  color: #fff;
+  text-align: left;
+  width: 100%;
+}
+hr {
+  border: 1px dashed #fff;
+}
+
+.table .net-amount td:first-of-type {
+  border-top: none;
+}
+.table .net-amount td {
+  border-top: 2px dashed #fff;
+  border-bottom: 2px dashed #fff;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coffee House</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body class="order-page">
+    <nav class="navbar-dark">
+      <a class="navbar-brand" href="index.html"> COFFEE HOUSE </a>
+    </nav>
+
+    <div class="coffee-container">
+      <form action="bill.html" method="get">
+
+        <label for="coffee">Coffee</label><br />
+        <select name="coffee" id="coffee">
+          <option value="Espresso">Espresso</option>
+          <option value="Cappucino">Cappucino</option>
+          <option value="Latte">Latte</option>
+        </select>
+        <br/>
+
+        <label for="addon">Addons</label><br />
+        <select name="addon" id="addon">
+          <option value="Milk">Milk</option>
+          <option value="Cream">Cream</option>
+          <option value="Latte">Latte</option>
+        </select>
+        <br />
+
+        <label for="quantity">Quantity</label><br />
+        <input
+          min="1"
+          max="10"
+          type="number"
+          id="quantity"
+          name="quantity"
+          required
+          value="1"
+        />
+        <br /><br />
+        <button class="btn" type="submit" onclick="myOrder()">Order Now</button>
+      </form>
+    </div>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>

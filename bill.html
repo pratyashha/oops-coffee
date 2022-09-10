@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Shop</title>
+   <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="billpage">
+    <nav class="navbar">
+        <a href="index.html">
+          COFFEE HOUSE
+        </a>
+    </nav>
+
+    <div class="bill">
+        <div>
+          <h1></h1>
+        </div>
+       
+        <div><h3>RETAIL INVOICE  </h3> <br> </div>
+        <div class="bill-details">
+       
+        
+        </div>
+        <table class="table">
+       <tr class="header">
+          <th>
+            Coffee
+            <hr>
+          </th> <th>
+            Addon
+            <hr>
+          </th> <th>
+            Qty
+            <hr>
+          </th>
+             <th>
+            Price
+            <hr>
+          </th>
+          
+
+
+          </tr>
+            <td id="1">Coffee Name</td>
+            <td id="2">Addon Name</td>
+            <td id="3">1</td>
+            <td id="4">0</td>
+          </tr>        
+      
+        
+          <tr class="net-amount">
+            <td></td>
+            <td>Total Amount</td>
+            <td></td>
+            <td id="5">0</td>
+          </tr>
+        </table>
+        ©Pratyasha Tripathy
+       
+      </div>
+      <button class="btn"> <a href="coffee.html">Order More</a> </button>
+      <script>
+        document.getElementById('1').innerHTML = localStorage.getItem('coffeename');
+        document.getElementById('2').innerHTML = localStorage.getItem('coffeeaddon');
+        document.getElementById('3').innerHTML = 'x'+localStorage.getItem('coffeecups');
+        document.getElementById('4').innerHTML = 'Rs.'+localStorage.getItem('coffeeprice');
+        document.getElementById('5').innerHTML = 'Rs.'+localStorage.getItem('coffeeprice');
+    </script>
+</body>
+</html>
